@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --verde-cpm: #006341;
+            --dourado: #FFD700;
+            --cinza-escuro: #343a40;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--verde-cpm) 0%, #004225 100%);
+            color: white;
+            padding: 3rem 0;
+            border-bottom: 5px solid var(--dourado);
+        }
+        
+        .avatar {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .habilidade-badge {
+            font-size: 1rem;
+            margin: 0.3rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        .card-futuro {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .card-futuro:hover {
+            transform: translateY(-10px);
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 2rem;
+            color: var(--verde-cpm);
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background: var(--dourado);
+        }
+        
+        footer {
+            background: var(--cinza-escuro);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+    </style>
+    <title>Meu Portfólio - CPM Curitiba</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="container-fluid text-center">
+        <div class="container">
+            <img src="pedro.jpeg" alt="Coritiba Football Clube" class="avatar rounded-circle mb-3">
+            <h1 class="display-4">Vitor Zucatti</h1>
+            <p class="lead">Aluno do CPM Curitiba | Itinerário de Exatas</p>
+            <p class="mb-4">
+                Estudante dedicado de programação com foco em Análise e Desenvolvimento de Sistemas
+            </p>
+            
+            <div class="mt-4">
+                <span class="badge habilidade-badge bg-light text-dark">
+                    <i class="bi bi-code-slash"></i> HTML
+                </span>
+                <span class="badge habilidade-badge bg-light text-dark">
+                    <i class="bi bi-palette"></i> CSS
+                </span>
+                <span class="badge habilidade-badge bg-light text-dark">
+                    <i class="bi bi-filetype-js"></i> JavaScript
+                </span>
+                <span class="badge habilidade-badge bg-light text-dark">
+                    <i class="bi bi-joystick"></i> Scratch
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Futuro -->
+    <main class="container my-5">
+        <h2 class="section-title">Meu Futuro</h2>
+        
+        <div class="row g-4">
+            <!-- Card UFPR -->
+            <div class="col-md-6">
+                <div class="card card-futuro h-100">
+                    <img src="politecnico.jpg" class="card-img-top" alt="Campus UFPR">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <i class="bi bi-building"></i> Universidade Federal
+                        </h3>
+                        <p class="card-text">
+                            Meu principal objetivo é ingressar na UFPR no curso de Análise e Desenvolvimento de Sistemas. 
+                            Estou me preparando através do itinerário de exatas do CPM e estudos complementares em programação.
+                        </p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success"></i> Nota de corte: ~720 (SISU 2023)
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success"></i> Duração: 3 anos
+                            </li>
+                            <li class="list-group-item">
+                                <i class="bi bi-check-circle-fill text-success"></i> Campus: Curitiba
+                            </li>
+                        </ul>
+                        <a href="https://ufpr.br" class="btn btn-outline-primary" target="_blank">
+                            <i class="bi bi-globe"></i> Site Oficial
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Carreira -->
+            <div class="col-md-6">
+                <div class="card card-futuro h-100">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Carreira em TI">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <i class="bi bi-briefcase"></i> Objetivos Profissionais
+                        </h3>
+                        <p class="card-text">
+                            Além da formação acadêmica, pretendo:
+                        </p>
+                        <div class="d-flex flex-column gap-2">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>
+                                <span>Desenvolver projetos reais durante a graduação</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>
+                                <span>Conseguir estágio nos primeiros anos do curso</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>
+                                <span>Especializar-me em desenvolvimento web full-stack</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-arrow-right-circle-fill text-primary me-2"></i>
+                                <span>Trabalhar em empresas inovadoras de tecnologia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Linha do Tempo -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="section-title">Minha Jornada</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-container left">
+                        <div class="timeline-content">
+                            <h4>2019 - Atual</h4>
+                            <p>Estudante do CPM Curitiba - Itinerário de Exatas</p>
+                            <p class="text-muted">Aprendendo bases da programação e matemática avançada</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <h4>2025</h4>
+                            <p>Preparação para o ENEM</p>
+                            <p class="text-muted">Foco em Matemática, Redação e Tecnologia</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container left">
+                        <div class="timeline-content">
+                            <h4>2026</h4>
+                            <p>Ingresso na UFPR (objetivo)</p>
+                            <p class="text-muted">Curso de Análise e Desenvolvimento de Sistemas</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container right">
+                        <div class="timeline-content">
+                            <h4>2027/28</h4>
+                            <p>Formação e início da carreira</p>
+                            <p class="text-muted">Primeiro emprego como desenvolvedor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <h3>Contato</h3>
+            <div class="d-flex justify-content-center gap-3 my-3">
+                <a href="#" class="text-white fs-4">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="#" class="text-white fs-4">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="text-white fs-4">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </div>
+            <p class="mb-0">
+                <small>© 2025 Vitor Zucatti - Aluno do CPM Curitiba</small>
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bras%C3%A3o_do_Col%C3%A9gio_da_Pol%C3%ADcia_Militar_do_Paran%C3%A1.png/1200px-Bras%C3%A3o_do_Col%C3%A9gio_da_Pol%C3%ADcia_Militar_do_Paran%C3%A1.png" alt="Brasão CPM" style="height: 60px; margin-top: 1rem;">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Estilos para a linha do tempo */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--verde-cpm);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+        
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid var(--dourado);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        @media screen and (max-width: 600px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-container::before {
+                left: 60px;
+                border: medium solid white;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent white transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 15px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+        }
+    </style>
+</body>
+</html>
